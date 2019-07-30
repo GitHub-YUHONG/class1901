@@ -1,5 +1,6 @@
 yum -y install vsftpd
-rm -rf /var/ftp/pub
+rm -rf /var/ftp/*
 systemctl start vsftpd && systemctl enable vsftpd
-systemctl firewall @@ setenforce 0
-
+systemctl stop firewalld && systemctl disable firewalld
+sentenforce 0
+echo " VSFTPD INSTALL OVER "
