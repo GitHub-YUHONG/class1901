@@ -1,0 +1,18 @@
+#! /usr/bin/env bash
+
+#encoding:utf8
+#author:yuhong
+#date:2019/07/30
+
+
+variable='global variable'
+
+function func01() {
+	local variable='local variable'
+	echo ${variable}
+}
+
+func01
+
+echo ${variable}
+
