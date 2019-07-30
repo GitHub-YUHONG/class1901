@@ -1,0 +1,5 @@
+yum -y install vsftpd
+rm -rf /var/ftp/pub
+systemctl start vsftpd && systemctl enable vsftpd
+systemctl firewall @@ setenforce 0
+
